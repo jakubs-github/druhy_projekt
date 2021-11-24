@@ -62,7 +62,7 @@ def kontrola_hadani(hadani: str) -> bool:
     elif hadani:
         for cislo in hadani:
             if hadani.count(cislo) > 1:
-                print("You are not allowed to enter any number with duplicates")
+                print("You are not allowed to enter any number \nwith duplicates")
                 kontrola_vstupu = False
                 break
     return kontrola_vstupu
@@ -127,9 +127,7 @@ hlavni()
 # Otázky:
 # 1. je nějaká cesta abych se vyhnul v řádku 42 použití druhého if ve while?
 # Případně, je to takto akceptovatelné?
-# 2. jak lze zalomit text na řádcích 61 a 90. Zkoušel jsem něco podle PEP-8,
-# ale u řádku 61 mi Pycharm nabízí další úvozovky na novém řádku, což pravděpodbně
-# nebude akceptovatelné podle PEP-8 (alespoň jsem tam tohle řešení nenašel). Na řádku 90
-# si nejsem jistý jak s takto formatovaným textem zacházet a zalomit jej.
+# 2. jak lze zalomit text na řádku 90. Na tomto řádku si nejsem jistý jak s takto
+# formatovaným textem zacházet a zalomit jej ve skriptu tak aby se zalomení neprojevilo v programu.
 # 3. Zkoušel jsem podle externích zdrojů vložit časoměřič, ale nedařilo se mi. Mohl bych
 # poprosit o ukázku na tomto příkladu? Díky, Kuba
